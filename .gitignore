@@ -34,3 +34,6 @@ reports/
 .DS_Store
 Thumbs.db
 
+# Documentation files to exclude
+PROJECT_SUMMARY.md
+README.md
