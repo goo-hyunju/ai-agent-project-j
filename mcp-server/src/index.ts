@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import { fdsRouter } from "./modules/fds";
 import { reportRouter } from "./modules/report";
+import { logRouter } from "./modules/log";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
 app.use("/fds", fdsRouter);
 app.use("/report", reportRouter);
+app.use("/log", logRouter);
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });

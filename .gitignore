@@ -34,6 +34,19 @@ reports/
 .DS_Store
 Thumbs.db
 
+# Large data files
+sample_data/*.csv
+*.csv
+!sample_data/.gitkeep
+
 # Documentation files to exclude
 PROJECT_SUMMARY.md
-README.md
+FRONTEND_UI_COMPLETE.md
+IMPLEMENTATION_NOTES.md
+KAGGLE_IMPLEMENTATION.md
+C_STAGE_COMPLETE.md
+B_STAGE_COMPLETE.md
+AUTOENCODER_INTEGRATION.md
+D_STAGE_COMPLETE.md
+QUICK_START.md
+PROJECT.md

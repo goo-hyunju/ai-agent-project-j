@@ -33,5 +33,21 @@ export const mcpClient = {
     );
     return res.data; // { markdown }
   },
+
+  // 로그 관련 API
+  async loadLog(filePath: string) {
+    const res = await axios.post(`${MCP_BASE_URL}/log/load-log`, { filePath });
+    return res.data; // { lines }
+  },
+
+  async parseLog(lines: string[]) {
+    const res = await axios.post(`${MCP_BASE_URL}/log/parse`, { lines });
+    return res.data; // { parsed }
+  },
+
+  async logStats(parsed: any[]) {
+    const res = await axios.post(`${MCP_BASE_URL}/log/stats`, { parsed });
+    return res.data; // { counts, hourlyError, ... }
+  },
 };
 
