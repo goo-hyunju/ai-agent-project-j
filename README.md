@@ -144,8 +144,9 @@ ai-agent-project/
 
 #### 지원 데이터 형식
 
-- Kaggle Credit Card Fraud Detection 형식
+- [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) 데이터셋 형식
 - Time, V1~V28, Amount, Class 컬럼
+- 데이터셋 다운로드: [링크](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download)
 
 ### 2. 로그 장애 분석 에이전트
 
@@ -337,6 +338,14 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 ```
+
+**데이터 준비 (ML Service 사용 시):**
+
+FDS 에이전트 테스트를 위해 Kaggle Credit Card Fraud Detection 데이터셋이 필요합니다.
+
+1. [Kaggle 데이터셋 다운로드](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download)
+2. 다운로드한 `creditcard.csv` 파일을 `sample_data/` 디렉토리에 저장
+3. ML Service를 사용하는 경우 모델 학습 실행 (아래 "ML Service 모델 학습" 참고)
 
 ### 3. 서버 실행
 

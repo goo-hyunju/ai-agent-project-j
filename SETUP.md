@@ -103,7 +103,19 @@ python -c "import tensorflow as tf; print('TensorFlow', tf.__version__)"
 python -c "import fastapi; print('FastAPI installed')"
 ```
 
-### 4. 모델 학습 (ML Service 사용 시)
+### 4. 데이터 준비 (ML Service 사용 시)
+
+FDS 에이전트 테스트를 위해 Kaggle Credit Card Fraud Detection 데이터셋이 필요합니다.
+
+**다운로드 방법:**
+
+1. [Kaggle 데이터셋 페이지](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download) 접속
+2. "Download" 버튼 클릭하여 `creditcard.csv` 파일 다운로드
+3. 다운로드한 파일을 프로젝트의 `sample_data/` 디렉토리에 저장
+
+**참고**: Kaggle 계정이 필요할 수 있습니다 (무료 회원가입 가능)
+
+### 5. 모델 학습 (ML Service 사용 시)
 
 **한 번만 실행 (약 2-5분 소요):**
 ```powershell
